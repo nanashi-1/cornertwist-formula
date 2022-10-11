@@ -4,18 +4,24 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/main.css" />
         <title>Document</title>
     </head>
     <body>
-        <div>
-            <input type="range" min="0" max="10" value="0" id="c" />
-            <p id="c-label">0</p>
+        <div class="top-page">
+            <div class="clockwise-page-panel">
+                <label for="c">Clockwise</label>
+                <p id="c-label"></p>
+                <input type="range" step="1" min="0" max="16" id="c" />
+            </div>
+            <div class="counter-clockwise-page-panel">
+                <label for="ɔ">Counter-clockwise</label>
+                <p id="ɔ-label"></p>
+                <input type="range" step="1" min="0" max="16" id="ɔ" />
+            </div>
+            <p id="result"></p>
         </div>
-        <div>
-            <input type="range" min="0" max="10" value="0" id="ɔ" />
-            <p id="ɔ-label">0</p>
-        </div>
-        <p id="result">Cube will be solvable!</p>
+
         <script defer src="build/main.js" type="module"></script>
     </body>
 </html>
