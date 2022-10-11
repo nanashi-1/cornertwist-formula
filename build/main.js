@@ -7,8 +7,8 @@ var ɔLabel = document.getElementById("ɔ-label");
 var result = document.getElementById("result");
 var c = new BindableNumber(0);
 var ɔ = new BindableNumber(0);
-var solvableMessage = "The cube is solvable.";
-var unsolvableMessage = "Impossible to solve unless you corner twist.";
+var solvableMessage = "The cube is <b class='highlight'>solvable</b>.";
+var unsolvableMessage = "<b class='highlight'>Imposible</b> to solve unless you corner twist.";
 function update_c(c) {
     cInput.value = String(c);
     cLabel.innerHTML = String(c);
