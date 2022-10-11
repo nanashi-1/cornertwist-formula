@@ -9,8 +9,9 @@ var ɔLabel = document.getElementById("ɔ-label") as HTMLParagraphElement;
 var result = document.getElementById("result") as HTMLParagraphElement;
 var c: BindableNumber = new BindableNumber(0);
 var ɔ: BindableNumber = new BindableNumber(0);
-var solvableMessage: string = "The cube is solvable.";
-var unsolvableMessage: string = "Impossible to solve unless you corner twist.";
+var solvableMessage: string = "The cube is <b class='highlight'>solvable</b>.";
+var unsolvableMessage: string =
+    "<b class='highlight'>Imposible</b> to solve unless you corner twist.";
 
 // invoke if c changes
 function update_c(c: number) {
